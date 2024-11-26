@@ -1,0 +1,10 @@
+service: weather-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  weatherHandler:
+    handler: lambdas/dist/weatherHandler.handler
+

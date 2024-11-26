@@ -1,0 +1,18 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive files
+*.key
+*.pem
+secrets.json
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+

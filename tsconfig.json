@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Specifies the ECMAScript target version
+    "module": "CommonJS",                  // Node.js requires CommonJS modules
+    "outDir": "./lambdas/dist",            // Output directory for compiled JavaScript
+    "rootDir": "./lambdas/src",            // Root directory of the input TypeScript files
+    "strict": true,                        // Enable strict type checking
+    "esModuleInterop": true,               // Enable interoperability with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Enforces case sensitivity for imports
+    "moduleResolution": "node",           // Use Node.js-style module resolution
+    "types": ["node"],                     // Include Node.js types for type checking
+    "resolveJsonModule": true,             // Allow importing JSON files
+    "skipLibCheck": true                   // Skip type checking of declaration files
+  },
+  "include": ["./lambdas/src/**/*.ts"],    // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "**/*.spec.ts"] // Exclude test files and node_modules
+}
