@@ -32,6 +32,15 @@ This project is a serverless Weather API designed to retrieve and process weathe
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-repo/weather-api.git
+
+   cd weather-api/lambdas
+
+   npm init -y
+   npm install axios aws-sdk
+
+   zip -r weatherHandler.zip .
+   zip -r weatherHistoryHandler.zip .
+   
    cd weather-api/terraform
    
    terraform init
